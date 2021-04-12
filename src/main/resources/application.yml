@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: registration-service
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  servlet:
+    contextPath: /registration-service/v1
+  port: 9080
+
+
+## Customizable application configs
+
+iin:
+  cache:
+    refresh: 0 0 1 * * *
+
+cacheTimeToLiveInSeconds: 300
+maxEntriesInCache: 500
+ageLimit: 18
+iinLength: 6
