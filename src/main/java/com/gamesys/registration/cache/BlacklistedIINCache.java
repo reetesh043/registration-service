@@ -18,7 +18,7 @@ import static com.gamesys.registration.RegistrationServiceConstants.BLACKLISTED_
 
 
 /**
- * Cache to hold the blacklisted payment issuer identification numbers at application start up.
+ * Cache to hold the blacklisted payment issuer identification numbers at application start up
  */
 
 @Component
